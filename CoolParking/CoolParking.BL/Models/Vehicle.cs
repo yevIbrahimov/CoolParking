@@ -15,9 +15,9 @@ namespace CoolParking.BL.Models
 	public class Vehicle
 	{
 		[JsonProperty("id")]
-		public string Id { get; }
+		public string Id { get; set; }
 		[JsonProperty("vehicleType")]
-		public VehicleType VehicleType { get; }
+		public VehicleType VehicleType { get; set; }
 		[JsonProperty("balance")]
 		public decimal Balance { get; internal set; }
 
